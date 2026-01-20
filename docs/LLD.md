@@ -131,13 +131,17 @@ Response – 204 No Content
   }
 ]
 Response 201
+
 [
   { "bookingId": 9002, "status": "CONFIRMED" },
   { "bookingId": 9003, "status": "CONFIRMED" }
 ]
 POST /api/v1/bookings/cancel
+
 Request Body
+
 [9002, 9003]
+
 Response 200
 {
   "message": "Bookings cancelled successfully"
@@ -146,21 +150,29 @@ Response 200
 
 **4. Seat inventory allocation & updates**
 PUT /api/v1/partners/shows/{showId}/seats
+
 Request Body
+
 [
   { "seatNumber": "A1", "available": true },
   { "seatNumber": "A2", "available": false }
 ]
+
 Respose -200
+
 {
   "message": "Seat inventory updated"
 }
+
 409 - Conflict
+
 {
   "errorCode": "SEAT_LOCKED",
   "message": "One or more selected seats are unavailable"
 }
+
 400 - Bad Request
+
 {
   "errorCode": "INVALID_REQUEST",
   "message": "Invalid input parameters"
