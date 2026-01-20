@@ -11,10 +11,12 @@
 
 ## Components
 - Client -> CDN -> Load Balancer -> API Gateway-> Services
+- 
 **Services**
 - Booking Service (write-heavy)
 - Search Service (read-heavy)
 - Partner Service (B2B)
+- 
 **Data Stores**
 - Redis (seat locking)
 - Elasticsearch (search)
