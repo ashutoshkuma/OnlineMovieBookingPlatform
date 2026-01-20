@@ -13,5 +13,5 @@
 **Design Patterns**
 - Strategy (Offers)
 - Factory (Payments – extensible)
-- Repository
+- Repository, Service
 - CQRS
