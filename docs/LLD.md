@@ -20,6 +20,7 @@
 GET /api/v1/search/theatres
 Sample Request
 GET /api/v1/search/theatres?movieId=M123&city=Bangalore&date=2026-01-20
+
 Response -200
 [
   {
@@ -40,6 +41,7 @@ Response -200
 
 **2. Fetch platform offers by city & theatre**
 GET /api/v1/offers
+
 Response -200
 [
   {
@@ -57,6 +59,7 @@ Response -200
 **Write Scenarios**
 **1. Book tickets with seat locking**
    POST /api/v1/bookings
+   
    Request Body
    {
   "userId": "U1001",
@@ -65,6 +68,7 @@ Response -200
   "showTime": "14:30",
   "amount": 900
 }
+
 Response 201
 {
   "bookingId": 9001,
@@ -77,12 +81,14 @@ Response 201
 **2. Create / update / delete shows**
 **Create**
 POST /api/v1/partners/shows
+
 Request Body
 {
   "movieId": "M123",
   "theatreId": 10,
   "startTime": "2026-01-20T14:30:00"
 }
+
 Response 201
 {
   "showId": 101,
@@ -90,10 +96,12 @@ Response 201
 }
 **Update**
 PUT /api/v1/partners/shows/{showId}
+
 Request Body
 {
   "startTime": "2026-01-20T16:30:00"
 }
+
 Response
 {
   "message": "Show updated successfully"
@@ -104,6 +112,7 @@ Response – 204 No Content
 
 **3. Bulk booking & cancellation**
    POST /api/v1/bookings/bulk
+   
    Request Body
    [
   {
