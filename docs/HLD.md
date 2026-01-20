@@ -1,6 +1,7 @@
 # High Level Design – Movie Ticket Booking System
 
-<img width="796" height="291" alt="HLD_Movie_Booking System" src="https://github.com/user-attachments/assets/9ac6e6a2-67f5-4b3e-9137-7dabad513bf2" />
+<img width="796" height="291" alt="HLD_Movie_Booking System" src="https://github.com/user-attachments/assets/bcbc5aa8-7931-4c78-b81d-1ccd2003e431" />
+
 
 
 
