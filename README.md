@@ -17,5 +17,7 @@ Key goals to be accomplished as part of this solution:
 •	Bulk booking and cancellation
 •	Theatres can allocate seat inventory and update them for the show
 
+You can find the LLD, HLD , DB_SCHEMA in docs folder
+
 
 
