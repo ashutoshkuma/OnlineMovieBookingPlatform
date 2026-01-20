@@ -10,14 +10,21 @@
 - B2B + B2C separation
 
 ## Components
-- CDN → Load Balancer → API Gateway
+- Client -> CDN -> Load Balancer -> API Gateway-> Services
+**Services**
 - Booking Service (write-heavy)
 - Search Service (read-heavy)
 - Partner Service (B2B)
+**Data Stores**
 - Redis (seat locking)
 - Elasticsearch (search)
-- PostgreSQL 
+- PostgreSQL (booking, shows, seats)
 
+## Non-Functional
+- High availability
+- Strong consistency for seats
+- Horizontal scalability
+  
 ## Key Decisions
 - Redis TTL-based seat locking
 - Elasticsearch denormalized read models
