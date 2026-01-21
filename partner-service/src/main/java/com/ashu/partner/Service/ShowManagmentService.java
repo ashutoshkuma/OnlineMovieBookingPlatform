@@ -2,7 +2,7 @@
 public class ShowManagementService {
 
     @Autowired
-    private final ShowRepository repo;
+    private ShowRepository repo;
 
 
     public Show create(Show show) {
