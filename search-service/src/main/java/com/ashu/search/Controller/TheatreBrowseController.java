@@ -3,7 +3,7 @@
 public class TheatreBrowseController {
 
     @Autowired
-    private final TheatreBrowseService service;
+    private TheatreBrowseService service;
 
 
     @GetMapping("/theatres")
