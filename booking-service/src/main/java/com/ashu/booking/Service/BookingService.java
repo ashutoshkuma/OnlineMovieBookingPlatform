@@ -2,11 +2,11 @@
 public class BookingService {
 
     @Autowired
-    private final BookingRepository repo;
+    private BookingRepository repo;
     @Autowired
-    private final SeatLockService seatLock;
+    private SeatLockService seatLock;
     @Autowired
-    private final OfferService offerService;
+    private OfferService offerService;
 
 
 
