@@ -3,10 +3,10 @@
 public class PartnerController {
 
     @Autowired
-    private final ShowManagementService showService;
+    private ShowManagementService showService;
 
     @Autowired
-    private final SeatInventoryService seatService;
+    private SeatInventoryService seatService;
 
 
 
