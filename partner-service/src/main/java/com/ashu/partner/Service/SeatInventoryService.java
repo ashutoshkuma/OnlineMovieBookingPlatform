@@ -2,7 +2,7 @@
 public class SeatInventoryService {
 
     @Autowired
-    private final SeatInventoryRepository repo;
+    private SeatInventoryRepository repo;
 
 
 
