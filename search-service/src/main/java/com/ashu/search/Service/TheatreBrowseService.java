@@ -2,7 +2,7 @@
 public class TheatreBrowseService {
 
     @Autowired
-    private final MovieShowRepository repo;
+    private MovieShowRepository repo;
 
 
     public List<MovieShowDocument> browse(String movieId,
