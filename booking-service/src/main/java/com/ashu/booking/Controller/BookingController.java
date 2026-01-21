@@ -3,7 +3,7 @@
 public class BookingController {
 
     @Autowired
-    private final BookingService service;
+    private BookingService service;
 
     @PostMapping
     public Booking book(@RequestBody BookingRequest request) {
